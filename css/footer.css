@@ -21,3 +21,8 @@ footer p {
     font-weight: 300;
     padding-top: 0.5rem;
 }
+
+footer .custom-icon {
+    height: 35px;
+    width: 35px;
+}
