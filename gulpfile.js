@@ -9,8 +9,12 @@ var gulp = require('gulp'),
 	del = require('del');
 
 gulp.task("concatScripts", function() {
-	return gulp.src(['js/jquery.js', 
-			  'js/main.js'])
+	return gulp.src(['js/jquery.js',
+					'js/foundation.js',
+					'js/foundation.equilizer.js',
+					'js/foundation.reveal.js',
+					'js/fastclick.js', 
+			  		'js/main.js'])
 	.pipe(maps.init())
 	.pipe(concat('app.js'))
 	.pipe(maps.write('./')) //path relative to output directory
