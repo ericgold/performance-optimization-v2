@@ -8,7 +8,7 @@ var gulp = require('gulp'),
 	maps = require('gulp-sourcemaps'),
 	del = require('del');
 
-gulp.task("concatScripts", function() {
+gulp.task('concatScripts', function() {
 	return gulp.src(['js/jquery.js',
 					'js/foundation.js',
 					'js/foundation.equilizer.js',
@@ -20,6 +20,16 @@ gulp.task("concatScripts", function() {
 	.pipe(maps.write('./')) //path relative to output directory
 	.pipe(gulp.dest('js'));
 });
+
+//added to include foundation stylesheet
+gulp.task('concatStyles', ['compileSass'], function() {
+	return gulp.src(['css/application.css',
+					'css/foundation.min.css'])
+				.pipe(maps.init())
+				.pipe(concat('application.css'))
+				.pipe(maps.write('./'))
+				.pipe(gulp.dest('css'));
+})
 
 gulp.task('minifyScripts', ['concatScripts'], function() {
 	return gulp.src('js/app.js')
@@ -45,7 +55,7 @@ gulp.task('clean', function() {
 	del(['dist', 'css/application.css*', 'js/app*.js*']);
 })
 
-gulp.task('build', ['minifyScripts', 'compileSass'], function() {
+gulp.task('build', ['minifyScripts', 'concatStyles'], function() {
 	return gulp.src(['css/application.css', 'js/app.min.js', 'index.html',
 					'img/**', 'fonts/**'], { base: './'})
 			.pipe(gulp.dest('dist'));
