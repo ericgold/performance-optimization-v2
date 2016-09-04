@@ -3,6 +3,7 @@
 var gulp = require('gulp'),
 	concat = require('gulp-concat'),
 	uglify = require('gulp-uglify'),
+	cssnano = require('gulp-cssnano'),
 	rename = require('gulp-rename'),
 	sass = require('gulp-sass'),
 	maps = require('gulp-sourcemaps'),
@@ -21,6 +22,13 @@ gulp.task('concatScripts', function() {
 	.pipe(gulp.dest('js'));
 });
 
+gulp.task('minifyScripts', ['concatScripts'], function() {
+	return gulp.src('js/app.js')
+	.pipe(uglify())
+	.pipe(rename('app.min.js'))
+	.pipe(gulp.dest('js'));
+});
+
 //added to include foundation stylesheet
 gulp.task('concatStyles', ['compileSass'], function() {
 	return gulp.src(['css/application.css',
@@ -29,14 +37,16 @@ gulp.task('concatStyles', ['compileSass'], function() {
 				.pipe(concat('application.css'))
 				.pipe(maps.write('./'))
 				.pipe(gulp.dest('css'));
+});
+
+gulp.task('minifyStyles', ['concatStyles'], function() {
+	return gulp.src('css/application.css')
+	.pipe(cssnano())
+	.pipe(rename('application.min.css'))
+	.pipe(gulp.dest('css'));
 })
 
-gulp.task('minifyScripts', ['concatScripts'], function() {
-	return gulp.src('js/app.js')
-	.pipe(uglify())
-	.pipe(rename('app.min.js'))
-	.pipe(gulp.dest('js'));
-});
+
 
 gulp.task('compileSass', function() {
 	return gulp.src('scss/application.scss')
@@ -55,9 +65,9 @@ gulp.task('clean', function() {
 	del(['dist', 'css/application.css*', 'js/app*.js*']);
 })
 
-gulp.task('build', ['minifyScripts', 'concatStyles'], function() {
-	return gulp.src(['css/application.css', 'js/app.min.js', 'index.html',
-					'img/**', 'fonts/**'], { base: './'})
+gulp.task('build', ['minifyScripts', 'minifyStyles'], function() {
+	return gulp.src(['css/application.min.css', 'js/app.min.js', 'index.html',
+					'img/**'], { base: './'})
 			.pipe(gulp.dest('dist'));
 });
 

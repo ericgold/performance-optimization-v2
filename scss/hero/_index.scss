@@ -3,21 +3,21 @@
     background-size: cover;
     height: 60vh;
     margin-bottom: 1rem;
-    padding: 1.5rem 3rem;
+    padding: $standard-padding;
 }
 .hero .info {
     float: right;
     margin-top: 47vh;
 }
 .hero .info .attribution {
-    color: rgb(235, 236, 237);
-    font-family: "Ubuntu";
+    color: $background-color;
+    font-family: $font-sans;
     font-size: 0.95rem;
     float: left;
     text-align: right;
 }
 .hero .info .attribution b {
-    color: rgb(73, 85, 96);
+    color: $text-gray;
     display: block;
     font-weight: 500;
 }

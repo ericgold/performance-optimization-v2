@@ -1,5 +1,5 @@
 body {
-  background-color: #ebeced; }
+  background-color: #EFF0F1; }
 
 footer {
   padding: 1.5rem 3rem; }
@@ -10,7 +10,7 @@ footer {
 
 footer p {
   color: #7d8892;
-  font-family: "Ubuntu";
+  font-family: Ubuntu, sans-serif;
   font-size: 0.95rem;
   font-weight: 300;
   padding-top: 0.5rem; }
@@ -34,8 +34,8 @@ footer .custom-icon {
   margin-top: 47vh; }
 
 .hero .info .attribution {
-  color: #ebeced;
-  font-family: "Ubuntu";
+  color: #EFF0F1;
+  font-family: Ubuntu, sans-serif;
   font-size: 0.95rem;
   float: left;
   text-align: right; }
@@ -53,8 +53,8 @@ footer .custom-icon {
   width: 50px; }
 
 .menu {
-  background-color: #eff0f1;
-  font-family: "Arvo", serif;
+  background-color: #EFF0F1;
+  font-family: Arvo, serif;
   padding: 1.5rem 3rem;
   height: auto; }
 
@@ -74,11 +74,11 @@ footer .custom-icon {
   text-transform: uppercase; }
 
 .menu .inline-list a:hover {
-  color: #52ca6d;
+  color: #52CA6D;
   transition: all .3s ease-in-out; }
 
 .menu .inline-list .active a {
-  color: #52ca6d; }
+  color: #52CA6D; }
 
 @media only screen and (min-width: 40.063em) {
   .menu {
@@ -97,8 +97,8 @@ footer .custom-icon {
 .menu .account a {
   border: 2px solid;
   border-radius: .25rem;
-  color: #7a8995;
-  font-family: "Ubuntu", sans-serif;
+  color: #7A8995;
+  font-family: Ubuntu, sans-serif;
   font-weight: 500;
   letter-spacing: normal;
   margin-left: 0.5rem;
@@ -106,14 +106,14 @@ footer .custom-icon {
   text-transform: none; }
 
 .menu .account a:hover {
-  background-color: #52ca6d;
-  border-color: #52ca6d;
+  background-color: #52CA6D;
+  border-color: #52CA6D;
   color: #fff; }
 
 .menu .logo {
   background: url("../img/logo.png") no-repeat top left;
   background-size: contain;
-  font-family: "Arvo", serif;
+  font-family: Arvo, serif;
   font-size: 2rem;
   font-weight: bold;
   line-height: 1;
@@ -125,8 +125,8 @@ footer .custom-icon {
   height: 3rem; }
 
 .menu .logo b {
-  color: #2fabce;
-  font-family: "Ubuntu"; }
+  color: #2FABCE;
+  font-family: Ubuntu, sans-serif; }
 
 @media only screen and (min-width: 40.063em) {
   .logo {
