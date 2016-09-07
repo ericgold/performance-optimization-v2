@@ -1,3 +1,12 @@
+.icon-\. {
+  background-image: url("../images/sprite-..png"); }
+
+.icon-avatars {
+  background-image: url("../images/sprite-avatars.png"); }
+
+.icon-photos {
+  background-image: url("../images/sprite-photos.png"); }
+
 body {
   background-color: #EFF0F1; }
 

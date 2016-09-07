@@ -1,0 +1,64 @@
+$\.-logo: -0px -0px 1288px 132px;
+$avatars-avatar1: -0px -0px 188px 188px;
+$avatars-avatar2: -0px -188px 188px 188px;
+$avatars-avatar3: -0px -376px 188px 188px;
+$avatars-avatar4: -0px -564px 188px 188px;
+$avatars-avatar5: -0px -752px 308px 308px;
+$avatars-avatar6: -0px -1060px 308px 308px;
+$avatars-avatar7: -0px -1368px 308px 308px;
+$photos-photo3-thumbnail: -0px -0px 872px 530px;
+$photos-photo5-thumbnail: -0px -530px 872px 584px;
+$photos-photo2-thumbnail: -0px -1114px 872px 584px;
+$photos-photo9-thumbnail: -0px -1698px 872px 584px;
+$photos-photo1-thumbnail: -0px -2282px 872px 584px;
+$photos-photo6-thumbnail: -0px -2866px 872px 585px;
+$photos-photo4-thumbnail: -0px -3451px 872px 591px;
+$photos-photo7-thumbnail: -0px -4042px 872px 656px;
+$photos-photo8-thumbnail: -0px -4698px 872px 872px;
+$photos-photo3: -0px -5570px 1884px 1141px;
+$photos-photo1: -0px -6711px 1884px 1258px;
+$photos-photo9: -0px -7969px 1884px 1258px;
+$photos-photo5: -0px -9227px 1884px 1259px;
+$photos-photo2: -0px -10486px 1884px 1259px;
+$photos-photo6: -0px -11745px 1884px 1261px;
+$photos-photo4: -0px -13006px 1884px 1273px;
+$photos-photo7: -0px -14279px 1884px 1415px;
+$photos-photo8: -0px -15694px 1884px 1884px;
+$photos-header: -0px -17578px 2888px 1951px;
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 3);
+}
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 4);
+}
+@function sprite-width($sprite) {
+   @return nth($sprite, 3);
+}
+@function sprite-height($sprite) {
+   @return nth($sprite, 4);
+}
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 1);
+  $sprite-offset-y: nth($sprite, 2);
+  background-position: $sprite-offset-x $sprite-offset-y;
+}
+@mixin sprite($sprite, $display: block) {
+   @include sprite-position($sprite);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: $display;
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+.icon-\. {
+  background-image: url('../images/sprite-..png');
+}
+
+.icon-avatars {
+  background-image: url('../images/sprite-avatars.png');
+}
+
+.icon-photos {
+  background-image: url('../images/sprite-photos.png');
+}
