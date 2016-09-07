@@ -55,11 +55,15 @@ footer .custom-icon {
   font-weight: 500; }
 
 .hero .info .avatar {
+  object-fit: none;
   border-radius: 50%;
   float: right;
   height: 50px;
   margin-left: 1rem;
   width: 50px; }
+
+.avatar-1 {
+  object-position: 0px 0px 188px 188px; }
 
 .menu {
   background-color: #EFF0F1;
@@ -201,11 +205,30 @@ footer .custom-icon {
   font-weight: 500; }
 
 .image-grid .image .info .avatar {
+  object-fit: none;
   border-radius: 50%;
   float: left;
   height: 50px;
   margin-right: 1rem;
   width: 50px; }
+
+.avatar-2 {
+  object-position: 0px -188px 188px 188px; }
+
+.avatar-3 {
+  object-position: 0px -376px 188px 188px; }
+
+.avatar-4 {
+  object-position: 0px -564px 188px 188px; }
+
+.avatar-5 {
+  object-position: 0px -752px 308px 308px; }
+
+.avatar-6 {
+  object-position: 0px -1060px 308px 308px; }
+
+.avatar-7 {
+  object-position: 0px -1368px 308px 308px; }
 
 /*# sourceMappingURL=application.css.map */
 

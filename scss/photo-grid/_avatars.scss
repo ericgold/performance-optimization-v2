@@ -1,0 +1,27 @@
+.image-grid .image .info .avatar {
+	object-fit: none;
+    border-radius: 50%;
+    float: left;
+    height: 50px;
+    margin-right: 1rem;
+    width: 50px;
+}
+
+.avatar-2 {
+	object-position: $avatars-avatar2;
+}
+.avatar-3 {
+	object-position: $avatars-avatar3;
+}
+.avatar-4 {
+	object-position: $avatars-avatar4;
+}
+.avatar-5 {
+	object-position: $avatars-avatar5;
+}
+.avatar-6 {
+	object-position: $avatars-avatar6;
+}
+.avatar-7 {
+	object-position: $avatars-avatar7;
+}
