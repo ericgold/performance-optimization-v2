@@ -1,11 +1,11 @@
 .icon-\. {
-  background-image: url("../images/sprite-..png"); }
+  background-image: url("../img/sprite-..png"); }
 
 .icon-avatars {
-  background-image: url("../images/sprite-avatars.png"); }
+  background-image: url("../img/sprite-avatars.png"); }
 
 .icon-photos {
-  background-image: url("../images/sprite-photos.png"); }
+  background-image: url("../img/sprite-photos.png"); }
 
 body {
   background-color: #EFF0F1; }
@@ -61,11 +61,14 @@ footer .custom-icon {
   margin-left: 1rem;
   width: 50px; }
 
-/*
 .avatar-1 {
-	object-position: $avatars-avatar1;
-}
-*/
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  width: 50px;
+  height: 50px; }
+
 .menu {
   background-color: #EFF0F1;
   font-family: Arvo, serif;
@@ -206,8 +209,6 @@ footer .custom-icon {
   font-weight: 500; }
 
 .image-grid .image .info .avatar {
-  object-fit: none;
-  object-position: 0 0;
   border-radius: 50%;
   float: left;
   height: 50px;
@@ -215,22 +216,52 @@ footer .custom-icon {
   width: 50px; }
 
 .avatar-2 {
-  object-position: 0px -188px 188px 188px; }
+  background-position: 0px -50px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  width: 50px;
+  height: 50px; }
 
 .avatar-3 {
-  object-position: 0px -376px 188px 188px; }
+  background-position: 0px -100px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  width: 50px;
+  height: 50px; }
 
 .avatar-4 {
-  object-position: 0px -564px 188px 188px; }
+  background-position: 0px -50px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  width: 50px;
+  height: 50px; }
 
 .avatar-5 {
-  object-position: 0px -752px 308px 308px; }
+  background-position: 0px -150px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  width: 50px;
+  height: 50px; }
 
 .avatar-6 {
-  object-position: 0px -1060px 308px 308px; }
+  background-position: 0px -200px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  width: 50px;
+  height: 50px; }
 
 .avatar-7 {
-  object-position: 0px -1368px 308px 308px; }
+  background-position: 0px -250px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  width: 50px;
+  height: 50px; }
 
 /*# sourceMappingURL=application.css.map */
 

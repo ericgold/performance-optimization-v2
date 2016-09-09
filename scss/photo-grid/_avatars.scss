@@ -1,6 +1,6 @@
 .image-grid .image .info .avatar {
-	object-fit: none;
-	object-position: 0 0;
+	//object-fit: none;
+	//object-position: 0 0;
     border-radius: 50%;
     float: left;
     height: 50px;
@@ -9,21 +9,24 @@
 }
 
 .avatar-2 {
-	object-position: $avatars-avatar2;
+	@include sprite($avatars-avatar2);
 }
+
 .avatar-3 {
-	object-position: $avatars-avatar3;
+	@include sprite($avatars-avatar3);
+	
 }
 .avatar-4 {
-	object-position: $avatars-avatar4;
+	@include sprite($avatars-avatar2); //same as avatar 2
 }
 .avatar-5 {
-	object-position: $avatars-avatar5;
+	@include sprite($avatars-avatar5);
 }
 .avatar-6 {
-	object-position: $avatars-avatar6;
+	@include sprite($avatars-avatar6);
 }
 .avatar-7 {
-	object-position: $avatars-avatar7;
+	@include sprite($avatars-avatar7);
+	
 }
 

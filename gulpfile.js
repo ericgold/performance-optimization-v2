@@ -62,6 +62,8 @@ gulp.task('sprites', function() {
 		out: './dist',
 		src: 'img/**/*.{png,jpg}',
 		style: './_sprite.scss',
+		cssPath: '../img',
+		margin: 0,
 		processor: 'sass',
 		split: true
 	})
