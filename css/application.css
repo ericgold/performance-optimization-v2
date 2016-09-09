@@ -208,6 +208,14 @@ footer .custom-icon {
   display: block;
   font-weight: 500; }
 
+.thumbnail-1 {
+  background-position: 0px -2250px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  width: 864px;
+  height: 576px; }
+
 .image-grid .image .info .avatar {
   border-radius: 50%;
   float: left;
