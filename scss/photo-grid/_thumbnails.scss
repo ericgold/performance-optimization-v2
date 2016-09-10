@@ -1,3 +1,36 @@
 .thumbnail-1 {
 	@include sprite($thumbnails-photo1-thumbnail);
 }
+
+.thumbnail-2 {
+	@include sprite($thumbnails-photo2-thumbnail);
+}
+
+.thumbnail-3 {
+	@include sprite($thumbnails-photo3-thumbnail);
+}
+
+.thumbnail-4 {
+	@include sprite($thumbnails-photo4-thumbnail);
+}
+
+.thumbnail-5 {
+	@include sprite($thumbnails-photo5-thumbnail);
+}
+
+.thumbnail-6 {
+	@include sprite($thumbnails-photo6-thumbnail);
+}
+
+.thumbnail-7 {
+	@include sprite($thumbnails-photo7-thumbnail);
+}
+
+.thumbnail-8 {
+	@include sprite($thumbnails-photo8-thumbnail);
+}
+
+.thumbnail-9 {
+	@include sprite($thumbnails-photo9-thumbnail);
+}
+

@@ -1,8 +1,8 @@
-.icon-\. {
-  background-image: url("../img/sprite-..png"); }
-
 .icon-avatars {
   background-image: url("../img/sprite-avatars.png"); }
+
+.icon-others {
+  background-image: url("../img/sprite-others.png"); }
 
 .icon-photos {
   background-image: url("../img/sprite-photos.png"); }
@@ -35,7 +35,12 @@ footer .custom-icon {
   width: 35px; }
 
 .hero {
-  background: url("../img/photos/photo4.jpg") no-repeat center center;
+  background-position: 0px -62px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  width: 1440px;
+  height: 971px;
   background-size: cover;
   height: 60vh;
   margin-bottom: 1rem;
@@ -131,18 +136,13 @@ footer .custom-icon {
   color: #fff; }
 
 .menu .logo {
-  background: url("../img/logo.png") no-repeat top left;
-  background-size: contain;
-  font-family: Arvo, serif;
-  font-size: 2rem;
-  font-weight: bold;
-  line-height: 1;
-  margin: 0 0 1rem 0;
-  color: #485461;
-  text-indent: -9999999rem;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
   overflow: hidden;
-  width: 40rem;
-  height: 3rem; }
+  display: block;
+  width: 640px;
+  height: 62px;
+  margin: 0 0 1rem 0; }
 
 .menu .logo b {
   color: #2FABCE;
@@ -171,7 +171,8 @@ footer .custom-icon {
   width: 75px; }
 
 .image-grid {
-  padding: 0 3rem; }
+  padding: 0 3rem;
+  max-width: 1440px; }
 
 .image-grid h2 {
   color: #495560;
@@ -212,12 +213,74 @@ footer .custom-icon {
   font-weight: 500; }
 
 .thumbnail-1 {
-  background-position: 0px -522px;
+  background-position: 0px 0px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
-  width: 864px;
-  height: 576px;
+  width: 432px;
+  height: 288px; }
+
+.thumbnail-2 {
+  background-position: 0px -288px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  width: 432px;
+  height: 288px; }
+
+.thumbnail-3 {
+  background-position: 0px -576px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  width: 432px;
+  height: 288px; }
+
+.thumbnail-4 {
+  background-position: 0px -1728px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  width: 432px;
+  height: 291px; }
+
+.thumbnail-5 {
+  background-position: 0px -864px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  width: 432px;
+  height: 288px; }
+
+.thumbnail-6 {
+  background-position: 0px -1152px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  width: 432px;
+  height: 288px; }
+
+.thumbnail-7 {
+  background-position: 0px -2019px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  width: 432px;
+  height: 324px; }
+
+.thumbnail-8 {
+  background-position: 0px -2343px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  width: 432px;
+  height: 432px; }
+
+.thumbnail-9 {
+  background-position: 0px -1440px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
   width: 432px;
   height: 288px; }
 

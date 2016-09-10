@@ -26,14 +26,14 @@ gulp.task('concatScripts', function() {
 });
 
 
-gulp.task('compressImage', function() {
-	return gulp.src('./img/**/*.')
-	.pipe(image())
-	.pipe(gulp.dest('./img'));
-});
+//gulp.task('compressImage', function() {
+	//return gulp.src('./img/**/*.')
+	//.pipe(image())
+	//.pipe(gulp.dest('./img'));
+//});
 
 
-gulp.task('sprites', ['compressImage'], function() {
+gulp.task('sprites', /*['compressImage'],*/ function() {
 	return sprity.src({
 		out: './dist',
 		src: 'img/**/*.{png,jpg}',
