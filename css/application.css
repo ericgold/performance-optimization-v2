@@ -7,6 +7,9 @@
 .icon-photos {
   background-image: url("../img/sprite-photos.png"); }
 
+.icon-thumbnails {
+  background-image: url("../img/sprite-thumbnails.png"); }
+
 body {
   background-color: #EFF0F1; }
 
@@ -209,12 +212,14 @@ footer .custom-icon {
   font-weight: 500; }
 
 .thumbnail-1 {
-  background-position: 0px -2250px;
+  background-position: 0px -522px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
   width: 864px;
-  height: 576px; }
+  height: 576px;
+  width: 432px;
+  height: 288px; }
 
 .image-grid .image .info .avatar {
   border-radius: 50%;
