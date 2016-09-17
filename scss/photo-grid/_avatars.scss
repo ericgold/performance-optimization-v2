@@ -7,24 +7,24 @@
 }
 
 .avatar-2 {
-	@include sprite($avatars-avatar2);
+	@include sprite($avatar2);
 }
 
 .avatar-3 {
-	@include sprite($avatars-avatar3);
+	@include sprite($avatar3);
 	
 }
 .avatar-4 {
-	@include sprite($avatars-avatar2); //same as avatar 2
+	@include sprite($avatar2); //same as avatar 2
 }
 .avatar-5 {
-	@include sprite($avatars-avatar5);
+	@include sprite($avatar5);
 }
 .avatar-6 {
-	@include sprite($avatars-avatar6);
+	@include sprite($avatar6);
 }
 .avatar-7 {
-	@include sprite($avatars-avatar7);
+	@include sprite($avatar7);
 	
 }
 

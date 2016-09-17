@@ -1,29 +1,9 @@
-$avatars-avatar1: -0px -0px 50px 50px;
-$avatars-avatar2: -0px -50px 50px 50px;
-$avatars-avatar3: -0px -100px 50px 50px;
-$avatars-avatar5: -0px -150px 50px 50px;
-$avatars-avatar6: -0px -200px 50px 50px;
-$avatars-avatar7: -0px -250px 50px 50px;
-$others-logo: -0px -0px 640px 62px;
-$others-header: -0px -62px 1440px 971px;
-$photos-photo3: -0px -0px 1876px 1133px;
-$photos-photo1: -0px -1133px 1876px 1250px;
-$photos-photo9: -0px -2383px 1876px 1250px;
-$photos-photo2: -0px -3633px 1876px 1251px;
-$photos-photo5: -0px -4884px 1876px 1251px;
-$photos-photo6: -0px -6135px 1876px 1253px;
-$photos-photo4: -0px -7388px 1876px 1265px;
-$photos-photo7: -0px -8653px 1876px 1407px;
-$photos-photo8: -0px -10060px 1876px 1876px;
-$thumbnails-photo1-thumbnail: -0px -0px 432px 288px;
-$thumbnails-photo2-thumbnail: -0px -288px 432px 288px;
-$thumbnails-photo3-thumbnail: -0px -576px 432px 288px;
-$thumbnails-photo5-thumbnail: -0px -864px 432px 288px;
-$thumbnails-photo6-thumbnail: -0px -1152px 432px 288px;
-$thumbnails-photo9-thumbnail: -0px -1440px 432px 288px;
-$thumbnails-photo4-thumbnail: -0px -1728px 432px 291px;
-$thumbnails-photo7-thumbnail: -0px -2019px 432px 324px;
-$thumbnails-photo8-thumbnail: -0px -2343px 432px 432px;
+$avatar1: -0px -0px 50px 50px;
+$avatar2: -0px -50px 50px 50px;
+$avatar3: -0px -100px 50px 50px;
+$avatar5: -0px -150px 50px 50px;
+$avatar6: -0px -200px 50px 50px;
+$avatar7: -0px -250px 50px 50px;
 @mixin sprite-width($sprite) {
   width: nth($sprite, 3);
 }
@@ -50,18 +30,6 @@ $thumbnails-photo8-thumbnail: -0px -2343px 432px 432px;
   @include sprite-height($sprite);
 }
 
-.icon-avatars {
-  background-image: url('../img/sprite-avatars.png');
-}
-
-.icon-others {
-  background-image: url('../img/sprite-others.png');
-}
-
-.icon-photos {
-  background-image: url('../img/sprite-photos.png');
-}
-
-.icon-thumbnails {
-  background-image: url('../img/sprite-thumbnails.png');
+.icon {
+  background-image: url('../img/sprite.png');
 }

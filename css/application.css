@@ -1,14 +1,5 @@
-.icon-avatars {
-  background-image: url("../img/sprite-avatars.png"); }
-
-.icon-others {
-  background-image: url("../img/sprite-others.png"); }
-
-.icon-photos {
-  background-image: url("../img/sprite-photos.png"); }
-
-.icon-thumbnails {
-  background-image: url("../img/sprite-thumbnails.png"); }
+.icon {
+  background-image: url("../img/sprite.png"); }
 
 body {
   background-color: #EFF0F1; }
@@ -35,12 +26,7 @@ footer .custom-icon {
   width: 35px; }
 
 .hero {
-  background-position: 0px -62px;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  display: block;
-  width: 1440px;
-  height: 971px;
+  background: url("../img/images/photo4.jpg") no-repeat center center;
   background-size: cover;
   height: 60vh;
   margin-bottom: 1rem;
@@ -136,13 +122,10 @@ footer .custom-icon {
   color: #fff; }
 
 .menu .logo {
-  background-position: 0px 0px;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  display: block;
-  width: 640px;
-  height: 62px;
-  margin: 0 0 1rem 0; }
+  background: url("../img/images/logo.png") no-repeat top left;
+  margin: 0 0 1rem 0;
+  width: 40rem;
+  height: 3rem; }
 
 .menu .logo b {
   color: #2FABCE;
@@ -212,78 +195,45 @@ footer .custom-icon {
   display: block;
   font-weight: 500; }
 
+/*
 .thumbnail-1 {
-  background-position: 0px 0px;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  display: block;
-  width: 432px;
-  height: 288px; }
+	//@include sprite($thumbnails-photo1-thumbnail);
+	//width: 432px;
+	//height: 288px;
+}
 
 .thumbnail-2 {
-  background-position: 0px -288px;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  display: block;
-  width: 432px;
-  height: 288px; }
+	@include sprite($thumbnails-photo2-thumbnail);
+}
 
 .thumbnail-3 {
-  background-position: 0px -576px;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  display: block;
-  width: 432px;
-  height: 288px; }
+	@include sprite($thumbnails-photo3-thumbnail);
+}
 
 .thumbnail-4 {
-  background-position: 0px -1728px;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  display: block;
-  width: 432px;
-  height: 291px; }
+	@include sprite($thumbnails-photo4-thumbnail);
+}
 
 .thumbnail-5 {
-  background-position: 0px -864px;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  display: block;
-  width: 432px;
-  height: 288px; }
+	@include sprite($thumbnails-photo5-thumbnail);
+}
 
 .thumbnail-6 {
-  background-position: 0px -1152px;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  display: block;
-  width: 432px;
-  height: 288px; }
+	@include sprite($thumbnails-photo6-thumbnail);
+}
 
 .thumbnail-7 {
-  background-position: 0px -2019px;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  display: block;
-  width: 432px;
-  height: 324px; }
+	@include sprite($thumbnails-photo7-thumbnail);
+}
 
 .thumbnail-8 {
-  background-position: 0px -2343px;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  display: block;
-  width: 432px;
-  height: 432px; }
+	@include sprite($thumbnails-photo8-thumbnail);
+}
 
 .thumbnail-9 {
-  background-position: 0px -1440px;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  display: block;
-  width: 432px;
-  height: 288px; }
-
+	@include sprite($thumbnails-photo9-thumbnail);
+}
+*/
 .image-grid .image .info .avatar {
   border-radius: 50%;
   float: left;

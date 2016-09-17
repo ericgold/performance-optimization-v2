@@ -36,12 +36,12 @@ gulp.task('concatScripts', function() {
 gulp.task('sprites', /*['compressImage'],*/ function() {
 	return sprity.src({
 		out: './dist',
-		src: 'img/**/*.{png,jpg}',
+		src: 'img/avatars/*.{png,jpg}',
 		style: './_sprite.scss',
 		cssPath: '../img',
 		margin: 0,
 		processor: 'sass',
-		split: true
+		//split: true
 	})
 	.pipe(gulpif('*.png', gulp.dest('./dist/img/'), gulp.dest('./scss/sprites/')))
 });
@@ -88,7 +88,7 @@ gulp.task('clean', function() {
 })
 
 gulp.task('build', ['minifyScripts', 'minifyStyles'], function() {
-	return gulp.src(['css/application.min.css', 'js/app.min.js', 'index.html'], { base: './'})
+	return gulp.src(['css/application.min.css', 'js/app.min.js', 'img/images/*', 'index.html'], { base: './'})
 			.pipe(gulp.dest('dist'));
 });
 
