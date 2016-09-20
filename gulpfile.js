@@ -57,7 +57,7 @@ gulp.task('compileSass', ['sprites'], function() {
 //added to include foundation stylesheet
 gulp.task('concatStyles', ['compileSass'], function() {
 	return gulp.src(['css/application.css',
-					'css/foundation.min.css'])
+					'css/foundation.css'])
 				.pipe(maps.init())
 				.pipe(concat('application.css'))
 				.pipe(maps.write('./'))
