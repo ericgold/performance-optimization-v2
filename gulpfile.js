@@ -88,7 +88,7 @@ gulp.task('clean', function() {
 })
 
 gulp.task('build', ['minifyScripts', 'minifyStyles'], function() {
-	return gulp.src(['css/application.min.css', 'js/app.min.js', 'img/images/*', 'index.html'], { base: './'})
+	return gulp.src(['css/application.min.css', 'js/app.min.js', 'img/images/*', 'img/avatars-modal/*', 'index.html'], { base: './'})
 			.pipe(gulp.dest('dist'));
 });
 

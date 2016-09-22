@@ -1,0 +1,45 @@
+.menu {
+    background-color: $background-color;
+    font-family: $font-serif;
+    padding: $standard-padding;
+    height: auto;
+
+    .inline-list {
+        padding-top: 1rem;
+        text-align: center;
+
+        li {
+            float: none;
+            display: inline-block;
+        }
+
+        a {
+            color: rgb(72, 84, 97);
+            font-weight: bold;
+            letter-spacing: 0.125rem;
+            padding-bottom: 0.5rem;
+            text-transform: uppercase;
+
+            &:hover {
+                color: $hover-color;
+                transition: all .3s ease-in-out;
+            }
+        }
+
+        .active a {
+            color: $hover-color;
+        }
+    }
+
+
+}
+
+@media only screen and (min-width: 40.063em) {
+    .menu {
+        height: 7rem;
+    }
+    .menu .inline-list {
+        float: left;
+        margin: 0 0 0 1.5rem;
+    }
+}

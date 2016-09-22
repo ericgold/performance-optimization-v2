@@ -1,0 +1,24 @@
+
+.menu .account {
+    float: right;
+    margin: -.75rem 0 0 0;
+}
+.menu .account li {
+    margin-left: .2rem;
+}
+.menu .account a {
+    border: 2px solid;
+    border-radius: .25rem;
+    color: $dark-gray;
+    font-family: $font-sans;
+    font-weight: 500;
+    letter-spacing: normal;
+    margin-left: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    text-transform: none;
+}
+.menu .account a:hover {
+    background-color: $hover-color;
+    border-color: $hover-color;
+    color: #fff;
+}

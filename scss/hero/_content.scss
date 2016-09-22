@@ -1,24 +1,27 @@
 .hero {
-    //@include sprite($others-header);
     background: url("../img/images/photo4.jpg") no-repeat center center;
     background-size: cover;
     height: 60vh;
     margin-bottom: 1rem;
     padding: $standard-padding;
+
+    .info {
+        float: right;
+        margin-top: 47vh;
+
+        .attribution {
+            color: $background-color;
+            font-family: $font-sans;
+            font-size: 0.95rem;
+            float: left;
+            text-align: right;
+        }
+
+        .attribution b {
+            color: $text-gray;
+            display: block;
+            font-weight: 500;
+        }
+    }
 }
-.hero .info {
-    float: right;
-    margin-top: 47vh;
-}
-.hero .info .attribution {
-    color: $background-color;
-    font-family: $font-sans;
-    font-size: 0.95rem;
-    float: left;
-    text-align: right;
-}
-.hero .info .attribution b {
-    color: $text-gray;
-    display: block;
-    font-weight: 500;
-}
+

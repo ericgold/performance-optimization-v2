@@ -1,0 +1,21 @@
+.menu .logo {
+    
+    background: url('../img/images/logo.png') no-repeat top left;
+    //background-size: contain;
+    //font-family: $font-serif;
+    //font-size: 2rem;
+    //font-weight: bold;
+    //line-height: 1;
+    margin: 0 0 1rem 0;
+    //color: rgb(72, 84, 97);
+    //text-indent: -9999999rem;
+    //overflow: hidden;
+    width: 40rem;
+    height: 5rem;
+}
+
+@media only screen and (min-width: 40.063em) {
+    .logo {
+        float: left;
+    }
+}

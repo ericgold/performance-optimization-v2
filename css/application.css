@@ -31,22 +31,19 @@ footer .custom-icon {
   height: 60vh;
   margin-bottom: 1rem;
   padding: 1.5rem 3rem; }
-
-.hero .info {
-  float: right;
-  margin-top: 47vh; }
-
-.hero .info .attribution {
-  color: #EFF0F1;
-  font-family: Ubuntu, sans-serif;
-  font-size: 0.95rem;
-  float: left;
-  text-align: right; }
-
-.hero .info .attribution b {
-  color: #495560;
-  display: block;
-  font-weight: 500; }
+  .hero .info {
+    float: right;
+    margin-top: 47vh; }
+    .hero .info .attribution {
+      color: #EFF0F1;
+      font-family: Ubuntu, sans-serif;
+      font-size: 0.95rem;
+      float: left;
+      text-align: right; }
+    .hero .info .attribution b {
+      color: #495560;
+      display: block;
+      font-weight: 500; }
 
 .hero .info .avatar {
   border-radius: 50%;
@@ -68,28 +65,23 @@ footer .custom-icon {
   font-family: Arvo, serif;
   padding: 1.5rem 3rem;
   height: auto; }
-
-.menu .inline-list {
-  padding-top: 1rem;
-  text-align: center; }
-
-.menu .inline-list li {
-  float: none;
-  display: inline-block; }
-
-.menu .inline-list a {
-  color: #485461;
-  font-weight: bold;
-  letter-spacing: 0.125rem;
-  padding-bottom: 0.5rem;
-  text-transform: uppercase; }
-
-.menu .inline-list a:hover {
-  color: #52CA6D;
-  transition: all .3s ease-in-out; }
-
-.menu .inline-list .active a {
-  color: #52CA6D; }
+  .menu .inline-list {
+    padding-top: 1rem;
+    text-align: center; }
+    .menu .inline-list li {
+      float: none;
+      display: inline-block; }
+    .menu .inline-list a {
+      color: #485461;
+      font-weight: bold;
+      letter-spacing: 0.125rem;
+      padding-bottom: 0.5rem;
+      text-transform: uppercase; }
+      .menu .inline-list a:hover {
+        color: #52CA6D;
+        transition: all .3s ease-in-out; }
+    .menu .inline-list .active a {
+      color: #52CA6D; }
 
 @media only screen and (min-width: 40.063em) {
   .menu {
@@ -127,113 +119,60 @@ footer .custom-icon {
   width: 40rem;
   height: 5rem; }
 
-.menu .logo b {
-  color: #2FABCE;
-  font-family: Ubuntu, sans-serif; }
-
 @media only screen and (min-width: 40.063em) {
   .logo {
     float: left; } }
 
 .reveal-modal .info {
   padding: 2rem 1rem 0; }
-
-.reveal-modal .info .attribution {
-  color: #495560;
-  font-family: Ubuntu, sans-serif;
-  line-height: 75px; }
-
-.reveal-modal .info .attribution b {
-  font-weight: 700; }
-
-.reveal-modal .info .avatar {
-  border-radius: 50%;
-  float: left;
-  height: 75px;
-  margin-right: 1rem;
-  width: 75px; }
+  .reveal-modal .info .attribution {
+    color: #495560;
+    font-family: Ubuntu, sans-serif;
+    line-height: 75px; }
+    .reveal-modal .info .attribution b {
+      font-weight: 700; }
+  .reveal-modal .info .avatar {
+    border-radius: 50%;
+    float: left;
+    height: 75px;
+    margin-right: 1rem;
+    width: 75px; }
 
 .image-grid {
   padding: 0 3rem;
   max-width: 1440px; }
+  .image-grid h2 {
+    color: #495560;
+    font-family: Arvo, serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: normal; }
+  .image-grid .row {
+    max-width: 100%;
+    margin-bottom: 1rem; }
+  .image-grid .columns {
+    padding-left: 0; }
+  .image-grid .image a {
+    border-radius: .5rem .5rem 0 0;
+    /* max-height: 15rem; */
+    /* min-height: 15rem; */
+    display: block;
+    min-width: 100%;
+    overflow: hidden; }
+  .image-grid .image .info {
+    background-color: #fff;
+    border-bottom: 2px solid;
+    border-bottom-color: #7b8895;
+    border-radius: 0 0 .5rem .5rem;
+    padding: 1rem; }
+    .image-grid .image .info .attribution {
+      color: #495560;
+      font-family: Ubuntu, sans-serif;
+      font-size: 0.95rem; }
+    .image-grid .image .info .attribution b {
+      display: block;
+      font-weight: 500; }
 
-.image-grid h2 {
-  color: #495560;
-  font-family: Arvo, serif;
-  font-size: 1.5rem;
-  font-style: italic;
-  font-weight: normal; }
-
-.image-grid .row {
-  max-width: 100%;
-  margin-bottom: 1rem; }
-
-.image-grid .columns {
-  padding-left: 0; }
-
-.image-grid .image a {
-  border-radius: .5rem .5rem 0 0;
-  /* max-height: 15rem; */
-  /* min-height: 15rem; */
-  display: block;
-  min-width: 100%;
-  overflow: hidden; }
-
-.image-grid .image .info {
-  background-color: #fff;
-  border-bottom: 2px solid;
-  border-bottom-color: #7b8895;
-  border-radius: 0 0 .5rem .5rem;
-  padding: 1rem; }
-
-.image-grid .image .info .attribution {
-  color: #495560;
-  font-family: Ubuntu, sans-serif;
-  font-size: 0.95rem; }
-
-.image-grid .image .info .attribution b {
-  display: block;
-  font-weight: 500; }
-
-/*
-.thumbnail-1 {
-	//@include sprite($thumbnails-photo1-thumbnail);
-	//width: 432px;
-	//height: 288px;
-}
-
-.thumbnail-2 {
-	@include sprite($thumbnails-photo2-thumbnail);
-}
-
-.thumbnail-3 {
-	@include sprite($thumbnails-photo3-thumbnail);
-}
-
-.thumbnail-4 {
-	@include sprite($thumbnails-photo4-thumbnail);
-}
-
-.thumbnail-5 {
-	@include sprite($thumbnails-photo5-thumbnail);
-}
-
-.thumbnail-6 {
-	@include sprite($thumbnails-photo6-thumbnail);
-}
-
-.thumbnail-7 {
-	@include sprite($thumbnails-photo7-thumbnail);
-}
-
-.thumbnail-8 {
-	@include sprite($thumbnails-photo8-thumbnail);
-}
-
-.thumbnail-9 {
-	@include sprite($thumbnails-photo9-thumbnail);
-}
-*/
 .image-grid .image .info .avatar {
   border-radius: 50%;
   float: left;
