@@ -46,21 +46,21 @@ footer .custom-icon {
 
 @media only screen and (min-width: 40.063em) {
   .hero {
-    height: 20rem; }
+    height: 26.67rem; }
     .hero .info {
-      margin-top: 15rem; } }
+      margin-top: 20rem; } }
 
 @media only screen and (min-width: 64.063em) {
   .hero {
-    height: 30rem; }
+    height: 42.7rem; }
     .hero .info {
-      margin-top: 25rem; } }
+      margin-top: 35rem; } }
 
 @media only screen and (min-width: 90.063em) {
   .hero {
-    height: 40rem; }
+    height: 60rem; }
     .hero .info {
-      margin-top: 35rem; } }
+      margin-top: 53rem; } }
 
 .hero .info .avatar {
   border-radius: 50%;
