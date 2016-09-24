@@ -15,7 +15,7 @@ var gulp = require('gulp'),
 gulp.task('concatScripts', function() {
 	return gulp.src(['js/jquery.js',
 					'js/foundation.js',
-					'js/foundation.equilizer.js',
+					'js/foundation.equalizer.js',
 					'js/foundation.reveal.js',
 					'js/fastclick.js', 
 			  		'js/main.js'])

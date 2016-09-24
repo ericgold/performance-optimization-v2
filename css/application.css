@@ -12,10 +12,9 @@ footer {
     padding-left: 0; }
 
 footer p {
-  color: #7d8892;
+  color: #495560;
   font-family: Ubuntu, sans-serif;
   font-size: 0.95rem;
-  font-weight: 300;
   padding-top: 0.5rem; }
 
 footer .social {
@@ -28,12 +27,12 @@ footer .custom-icon {
 .hero {
   background: url("../img/images/photo4.jpg") no-repeat center center;
   background-size: cover;
-  height: 60vh;
+  height: 10rem;
   margin-bottom: 1rem;
   padding: 1.5rem 3rem; }
   .hero .info {
     float: right;
-    margin-top: 47vh; }
+    margin-top: 5rem; }
     .hero .info .attribution {
       color: #EFF0F1;
       font-family: Ubuntu, sans-serif;
@@ -44,6 +43,24 @@ footer .custom-icon {
       color: #495560;
       display: block;
       font-weight: 500; }
+
+@media only screen and (min-width: 40.063em) {
+  .hero {
+    height: 20rem; }
+    .hero .info {
+      margin-top: 15rem; } }
+
+@media only screen and (min-width: 64.063em) {
+  .hero {
+    height: 30rem; }
+    .hero .info {
+      margin-top: 25rem; } }
+
+@media only screen and (min-width: 90.063em) {
+  .hero {
+    height: 40rem; }
+    .hero .info {
+      margin-top: 35rem; } }
 
 .hero .info .avatar {
   border-radius: 50%;
@@ -61,18 +78,22 @@ footer .custom-icon {
   height: 50px; }
 
 .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: #EFF0F1;
   font-family: Arvo, serif;
   padding: 1.5rem 3rem;
   height: auto; }
   .menu .inline-list {
-    padding-top: 1rem;
-    text-align: center; }
+    text-align: center;
+    margin: 0.5rem 0 auto 0; }
     .menu .inline-list li {
       float: none;
       display: inline-block; }
     .menu .inline-list a {
-      color: #485461;
+      color: #495560;
       font-weight: bold;
       letter-spacing: 0.125rem;
       padding-bottom: 0.5rem;
@@ -83,16 +104,13 @@ footer .custom-icon {
     .menu .inline-list .active a {
       color: #52CA6D; }
 
-@media only screen and (min-width: 40.063em) {
+@media only screen and (min-width: 64.0625em) {
   .menu {
-    height: 7rem; }
+    flex-direction: row;
+    justify-content: flex-start; }
   .menu .inline-list {
-    float: left;
+    padding-top: 1rem;
     margin: 0 0 0 1.5rem; } }
-
-.menu .account {
-  float: right;
-  margin: -.75rem 0 0 0; }
 
 .menu .account li {
   margin-left: .2rem; }
@@ -115,13 +133,24 @@ footer .custom-icon {
 
 .menu .logo {
   background: url("../img/images/logo.png") no-repeat top left;
-  margin: 0 0 1rem 0;
-  width: 40rem;
-  height: 5rem; }
+  background-size: contain;
+  margin: 0;
+  width: 24rem;
+  height: 3rem; }
 
-@media only screen and (min-width: 40.063em) {
-  .logo {
-    float: left; } }
+@media only screen and (min-width: 40.0625em) {
+  .menu .logo {
+    width: 32rem;
+    height: 4rem; } }
+
+@media only screen and (min-width: 64.0625em) {
+  .menu .logo {
+    margin-right: auto; } }
+
+@media only screen and (min-width: 90.0625em) {
+  .menu .logo {
+    width: 40rem;
+    height: 5rem; } }
 
 .reveal-modal .info {
   padding: 2rem 1rem 0; }
@@ -162,7 +191,7 @@ footer .custom-icon {
   .image-grid .image .info {
     background-color: #fff;
     border-bottom: 2px solid;
-    border-bottom-color: #7b8895;
+    border-bottom-color: #7B8895;
     border-radius: 0 0 .5rem .5rem;
     padding: 1rem; }
     .image-grid .image .info .attribution {

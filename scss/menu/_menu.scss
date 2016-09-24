@@ -1,12 +1,16 @@
 .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: $background-color;
     font-family: $font-serif;
     padding: $standard-padding;
     height: auto;
 
     .inline-list {
-        padding-top: 1rem;
         text-align: center;
+        margin: 0.5rem 0 auto 0;
 
         li {
             float: none;
@@ -14,7 +18,7 @@
         }
 
         a {
-            color: rgb(72, 84, 97);
+            color: $text-gray;
             font-weight: bold;
             letter-spacing: 0.125rem;
             padding-bottom: 0.5rem;
@@ -34,12 +38,14 @@
 
 }
 
-@media only screen and (min-width: 40.063em) {
+
+@media only screen and (min-width: 64.0625em) {
     .menu {
-        height: 7rem;
+        flex-direction: row;
+        justify-content: flex-start;
     }
     .menu .inline-list {
-        float: left;
+        padding-top: 1rem;
         margin: 0 0 0 1.5rem;
     }
 }

@@ -1,13 +1,13 @@
 .hero {
     background: url("../img/images/photo4.jpg") no-repeat center center;
     background-size: cover;
-    height: 60vh;
+    height: 10rem;
     margin-bottom: 1rem;
     padding: $standard-padding;
 
     .info {
         float: right;
-        margin-top: 47vh;
+        margin-top: 5rem;
 
         .attribution {
             color: $background-color;
@@ -22,6 +22,37 @@
             display: block;
             font-weight: 500;
         }
-    }
+    }    
 }
+
+@media only screen and (min-width: 40.063em) {
+        .hero {
+            height: 20rem;  
+
+            .info {
+                margin-top: 15rem;
+            }
+        }
+
+    }
+
+    @media only screen and (min-width: 64.063em) {
+        .hero {
+            height: 30rem; 
+
+            .info {
+                margin-top: 25rem;
+            } 
+        }
+    }
+
+    @media only screen and (min-width: 90.063em) {
+        .hero {
+            height: 40rem;  
+
+            .info {
+                margin-top: 35rem;
+            }
+        }
+    }
 
