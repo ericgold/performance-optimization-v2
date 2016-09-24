@@ -1,8 +1,9 @@
 .hero {
+    max-width: 120.0625em;
+    margin: auto auto 1rem auto;
     background: url("../img/images/photo4.jpg") no-repeat center center;
     background-size: cover;
     height: 10rem;
-    margin-bottom: 1rem;
     padding: $standard-padding;
 
     .info {
