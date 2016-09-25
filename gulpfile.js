@@ -25,14 +25,7 @@ gulp.task('concatScripts', function() {
 });
 
 
-//gulp.task('compressImage', function() {
-	//return gulp.src('./img/**/*.')
-	//.pipe(image())
-	//.pipe(gulp.dest('./img'));
-//});
-
-
-gulp.task('sprites', /*['compressImage'],*/ function() {
+gulp.task('sprites', function() {
 	return sprity.src({
 		out: './dist',
 		src: 'img/avatars/*.{png,jpg}',
