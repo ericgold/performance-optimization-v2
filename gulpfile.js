@@ -17,7 +17,6 @@ gulp.task('concatScripts', function() {
 					'js/foundation.js',
 					'js/foundation.equalizer.js',
 					'js/foundation.reveal.js',
-					'js/fastclick.js', 
 			  		'js/main.js'])
 	.pipe(maps.init())
 	.pipe(concat('app.js'))
